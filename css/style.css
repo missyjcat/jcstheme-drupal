@@ -1,9 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+html, body { font-family: 'Open Sans', 'Arial', 'sans-serif'; font-size: 16px; font-weight: 300; }
+
 .header__region { background-color: #2e2e2e; }
 
-.header nav ul { list-style-type: none; padding: 0 0 20px 0; margin: 0; text-align: center; }
-.header nav li { display: inline; padding: 0 15px; }
-
 .logo { width: 610px; margin: 0 auto; padding: 25px 20px 15px 20px; }
+
+.header nav ul { list-style-type: none; padding: 0 0 20px 0; margin: 0; text-align: center; }
+.header nav li { display: inline; padding: 0 0 0 15px; }
+.header nav li a { padding: 0 11px; }
+.header nav li .active { font-weight: 600; background: transparent url("../img/star--small.png") no-repeat top right; }
+
+.header--collapsed { position: fixed; width: 100%; }
+.header--collapsed .header__region { height: 40px; }
+.header--collapsed .logo { width: 260px; margin: 0; padding: 10px; float: left; }
+.header--collapsed .logo__image { width: 260px; height: auto; }
+.header--collapsed nav ul { float: right; padding-top: 12px; }
+
+.aboutme { background-color: #c5e3e5; }
+
+.aboutme__photo { display: table-cell; vertical-align: middle; text-align: right; width: 47%; padding: 100px 0; }
+
+.aboutme__photoimage { width: 37%; padding-right: 60px; }
+
+.aboutme__description { display: table-cell; vertical-align: middle; }
+
+.aboutme__description__text { width: 80%; color: #537678; font-size: 24px; line-height: 50px; padding: 70px 0; }
+.aboutme__description__text strong { font-weight: 400; }
 
 a { text-decoration: none; }
 
