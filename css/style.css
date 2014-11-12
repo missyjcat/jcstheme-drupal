@@ -1,3 +1,13 @@
-/*
+.header__region { background-color: #2e2e2e; }
 
-*/
+.header nav ul { list-style-type: none; padding: 0 0 20px 0; margin: 0; text-align: center; }
+.header nav li { display: inline; padding: 0 15px; }
+
+.logo { width: 610px; margin: 0 auto; padding: 25px 20px 15px 20px; }
+
+a { text-decoration: none; }
+
+.darkbg .darkbg__whitelinks a { color: #fff; }
+.darkbg .darkbg__orangelinks a { color: #f4d1b2; }
+
+/*# sourceMappingURL=style.css.map */

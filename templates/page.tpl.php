@@ -10,30 +10,10 @@
 
 <?php print $mothership_poorthemers_helper; ?>
 
-<header role="banner">
-  <div class="siteinfo">
-    <?php if ($logo): ?>
-      <figure>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
-      </figure>
-    <?php endif; ?>
-
-    <?php if($site_name OR $site_slogan ): ?>
-    <hgroup>
-      <?php if($site_name): ?>
-        <h1><?php print $site_name; ?></h1>
-      <?php endif; ?>
-      <?php if ($site_slogan): ?>
-        <h2><?php print $site_slogan; ?></h2>
-      <?php endif; ?>
-    </hgroup>
-    <?php endif; ?>
-  </div>
+<header role="banner" class="header darkbg">
 
   <?php if($page['header']): ?>
-    <div class="header-region">
+    <div class="header__region darkbg__whitelinks">
       <?php print render($page['header']); ?>
     </div>
   <?php endif; ?>
@@ -45,11 +25,10 @@
   <div role="main" id="main-content">
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
-      <h1><?php print $title; ?></h1>
+      <!-- Never want to print the default title -->
+      <!-- <h1><?php print $title; ?></h1> -->
     <?php endif; ?>
     <?php print render($title_suffix); ?>
-
-    <?php print $breadcrumb; ?>
 
     <?php if ($action_links): ?>
       <ul class="action-links"><?php print render($action_links); ?></ul>
