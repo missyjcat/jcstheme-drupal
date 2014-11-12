@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic);
 html, body { font-family: 'Open Sans', 'Arial', 'sans-serif'; font-size: 16px; font-weight: 300; }
 
 .header__region { background-color: #2e2e2e; }
@@ -18,14 +19,46 @@ html, body { font-family: 'Open Sans', 'Arial', 'sans-serif'; font-size: 16px; f
 
 .aboutme { background-color: #c5e3e5; }
 
-.aboutme__photo { display: table-cell; vertical-align: middle; text-align: right; width: 47%; padding: 100px 0; }
+.aboutme__photo { display: table-cell; vertical-align: middle; text-align: right; width: 37%; padding: 100px 0; }
 
-.aboutme__photoimage { width: 37%; padding-right: 60px; }
+.aboutme__photoimage { width: 55%; padding-right: 60px; }
 
 .aboutme__description { display: table-cell; vertical-align: middle; }
 
 .aboutme__description__text { width: 80%; color: #537678; font-size: 24px; line-height: 50px; padding: 70px 0; }
 .aboutme__description__text strong { font-weight: 400; }
+
+.aboutme__description__text--collapsedheader { padding-top: 200px; }
+
+.aboutme__photo--collapsedheader { padding-top: 230px; }
+
+.blogroll { color: #fff; }
+
+.blogroll--content { background: #e48a83 url("../img/blogtitle.png") no-repeat 10px center; padding: 0 0 0 50px; }
+.blogroll--content .attachment { display: table; }
+
+.blogroll--featuredblog { width: 64%; background-color: #2e2e2e; display: table-cell; vertical-align: top; }
+
+.blogroll--roll { background-color: #363636; display: table-cell; vertical-align: top; }
+
+.blogroll__roll__title, .blogroll__posteddate { padding: 20px 0 0 20px; font-family: 'Crimson Text'; font-style: italic; padding: 20px 0 0 20px; color: #bcbcbc; font-size: 19px; }
+
+.blogroll__featuredblog__title a { color: #e48a83; padding: 3px 20px 15px 20px; font-size: 30px; font-weight: 400; display: block; }
+
+.blogroll__featuredblog__body { padding: 0 20px 20px 20px; font-size: 14px; line-height: 18px; color: #fff; }
+
+.blogroll__roll__posttitle { padding: 10px 20px 0 20px; font-size: 18px; font-weight: 400; }
+.blogroll__roll__posttitle a { color: #f4d1b2; }
+
+.portfoliomenu { background-color: #f4f4f4; float: left; width: 100%; }
+
+.portfoliomenu__title { color: #363636; padding: 40px 20px 40px 50px; font-weight: 800; text-transform: uppercase; font-size: 40px; float: left; }
+
+.portfoliomenu__nav { float: right; padding: 47px 50px 0 0; }
+.portfoliomenu__nav li { display: inline; display: inline; font-size: 27px; text-transform: uppercase; font-weight: 800; padding-left: 50px; color: #bcbcbc; }
+.portfoliomenu__nav li a { color: #bcbcbc; }
+
+.portfoliomenu--stickyheader { position: fixed; top: 41px; width: 100%; }
 
 a { text-decoration: none; }
 

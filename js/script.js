@@ -1,34 +1,32 @@
 (function (jcsUtils, $) {
 
-    /**
-     * Show/hide expanded version of the header for JCS
-     */
-    
-    var headerComponent = function() {
+    var headerComponent = {
 
-        var init = function() {
-            // Check position of window and appear/disappear element
-            // when conditions match
+        /**
+         * Initialize show/hide behavior for a header element of the site
+         * @param  {String} elClass - el to add class to
+         * @param  {String} testClass - classname to add when testHeight is 
+         *          triggered
+         * @param  {Number} testHeight - vert pos to trigger class
+         * @param  {String} testEl - element to test for vert pos
+         */
+        init: function(elClass, testClass, testHeight) {
+
+            var TESTHEIGHT = testHeight || ($(elClass).offset().top - 50);
 
             window.setInterval( function() {
-                var TESTHEIGHT = 100;
-                var vertPos = null;
-                
+
                 // Getting cross-browser compatible value of vertical
                 // position of scrollbar
                 vertPos = (window.pageYOffset !== undefined) ? window.pageYOffset : document.documentElement.scrollTop;
-
-                if (vertPos > TESTHEIGHT && !($('.header').hasClass('header--collapsed'))) {
-                    $('.header').addClass('header--collapsed');
-                } else if (vertPos < TESTHEIGHT && $('.header').hasClass('header--collapsed')) {
-                    $('.header').removeClass('header--collapsed');
+                
+                if (vertPos > TESTHEIGHT && !($(elClass).hasClass(testClass))) {
+                    $(elClass).addClass(testClass);
+                } else if (vertPos < TESTHEIGHT && $(elClass).hasClass(testClass)) {
+                    $(elClass).removeClass(testClass);
                 }
-            }, 300);
-        };
-
-        return {
-            init : init
-        };
+            }, 200);
+        }
 
     };
 
@@ -40,4 +38,7 @@
  * Initializing components
  */
 
-jcsUtils.headerComponent().init();
+jcsUtils.headerComponent.init('.header', 'header--collapsed', 100);
+jcsUtils.headerComponent.init('.aboutme__description__text', 'aboutme__description__text--collapsedheader', 100);
+jcsUtils.headerComponent.init('.aboutme__photo', 'aboutme__photo--collapsedheader', 100);
+jcsUtils.headerComponent.init('.portfoliomenu', 'portfoliomenu--stickyheader');
