@@ -14,14 +14,14 @@ if ($id_node) {
   $id_node = ' id="'. $id_node . '"';
 }
 
-$hideFieldsArray = [
+$hideFieldsArray = array(
   'comments',
   'links',
   'field_live_link',
   'body',
   'field_image',
   'field_portfolio_tags'
-];
+);
 
 foreach ($hideFieldsArray as $field) {
   hide($content[$field]);

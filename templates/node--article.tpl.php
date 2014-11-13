@@ -14,9 +14,9 @@ if ($id_node) {
   $id_node = ' id="'. $id_node . '"';
 }
 
-$hideFieldsArray = [
+$hideFieldsArray = array(
   'body'
-];
+);
 
 foreach ($hideFieldsArray as $field) {
   hide($content[$field]);
