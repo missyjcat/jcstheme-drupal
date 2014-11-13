@@ -138,6 +138,7 @@ html, body { font-family: "Open Sans", "Arial", "sans-serif"; font-size: 16px; f
 .comment-form div { text-align: center; }
 .comment-form .form-textarea-wrapper { width: 500px; margin: 0 auto; }
 .comment-form .filter-wrapper { border: 0; }
+.comment-form label[for="edit-homepage"], .comment-form #edit-homepage { display: none; }
 
 .blogindex .blogindex--wrapper { width: 80%; margin: 0 auto; padding-top: 40px; }
 .blogindex .blogindex__title a { font-size: 37px; line-height: 50px; color: #e47971; font-weight: 400; }
