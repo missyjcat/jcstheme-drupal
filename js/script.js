@@ -121,19 +121,21 @@
          */
         var doPositioning = function() {
 
-            var elsArray  = [
-                ['.datelist', '.blogheader__filters__dates'],
-                ['.categorylist', '.blogheader__filters__categories']
-            ];
+            if ($('.datelist').length) {
+                var elsArray  = [
+                    ['.datelist', '.blogheader__filters__dates'],
+                    ['.categorylist', '.blogheader__filters__categories']
+                ];
 
-            for (var i = 0; i < elsArray.length; i++) {
-                var datelist = $(elsArray[i][0]);
-                var dateMenuPos = $(elsArray[i][1]).offset();
+                for (var i = 0; i < elsArray.length; i++) {
+                    var list = $(elsArray[i][0]);
+                    var menuPos = $(elsArray[i][1]).offset();
 
-                datelist.css({
-                    top: dateMenuPos.top + 41 + 'px',
-                    left: dateMenuPos.left + 'px'
-                });
+                    list.css({
+                        top: menuPos.top + 41 + 'px',
+                        left: menuPos.left + 'px'
+                    });
+                }                
             }
 
         };
