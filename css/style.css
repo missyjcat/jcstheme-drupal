@@ -140,10 +140,11 @@ html, body { font-family: "Open Sans", "Arial", "sans-serif"; font-size: 16px; f
 .comment-form .filter-wrapper { border: 0; }
 .comment-form label[for="edit-homepage"], .comment-form #edit-homepage { display: none; }
 
-.blogindex .blogindex--wrapper { width: 80%; margin: 0 auto; padding-top: 40px; }
-.blogindex .blogindex__title a { font-size: 37px; line-height: 50px; color: #e47971; font-weight: 400; }
-.blogindex .blogindex__date { font-family: "Cardo", "Times New Roman", serif; color: #e2a8a3; font-style: italic; font-size: 17px; padding-bottom: 10px; }
-.blogindex .blogindex__body { font-size: 18px; line-height: 26px; padding-bottom: 40px; }
+.blogindex .blogindex--wrapper, .page-blog-categories .blogindex--wrapper, .page-blog-date .blogindex--wrapper { width: 80%; margin: 0 auto; padding-top: 40px; }
+.blogindex .blogindex--wrapper .page-title, .page-blog-categories .blogindex--wrapper .page-title, .page-blog-date .blogindex--wrapper .page-title { font-family: "Cardo", "Times New Roman", serif; color: #bcbcbc; font-style: italic; padding-bottom: 40px; }
+.blogindex .blogindex__title a, .page-blog-categories .blogindex__title a, .page-blog-date .blogindex__title a { font-size: 37px; line-height: 50px; color: #e47971; font-weight: 400; }
+.blogindex .blogindex__date, .page-blog-categories .blogindex__date, .page-blog-date .blogindex__date { font-family: "Cardo", "Times New Roman", serif; color: #e2a8a3; font-style: italic; font-size: 17px; padding-bottom: 10px; }
+.blogindex .blogindex__body, .page-blog-categories .blogindex__body, .page-blog-date .blogindex__body { font-size: 18px; line-height: 26px; padding-bottom: 40px; }
 
 .olderposts { background-color: #4a4a4a; }
 .olderposts h2 { font-family: "Cardo", "Times New Roman", serif; color: #bcbcbc; font-style: italic; font-size: 30px; padding: 20px; }
@@ -157,6 +158,17 @@ html, body { font-family: "Open Sans", "Arial", "sans-serif"; font-size: 16px; f
 .categorylist { position: absolute; background-color: #2e2e2e; width: 226px; color: #f4d1b2; text-align: center; display: none; }
 .categorylist a { color: #f4d1b2; padding: 20px 0; display: block; text-transform: uppercase; font-size: 20px; font-weight: 400; }
 
+.pathone-contact .page-title { padding: 50px; font-weight: 400; text-align: center; color: #e2a8a3; }
+.pathone-contact .node { width: 80%; font-size: 20px; line-height: 30px; text-align: center; margin: 0 auto; }
+
+.contactform { width: 80%; margin: 0 auto; text-align: center; }
+.contactform label { padding: 25px 0 5px 0; width: 50%; margin: 0 auto; text-align: center; }
+.contactform input[type="text"], .contactform input[type="email"] { width: 50%; margin: 0 auto; text-align: center; }
+.contactform .required { color: #e47971; }
+.contactform .required:after { content: '*'; }
+.contactform small { display: block; color: #e47971; }
+.contactform .form-actions input { border: 1px #e47971 solid; margin: 20px; width: 100px; height: 43px; text-transform: uppercase; font-weight: 800; color: #fff; background-color: transparent; }
+
 footer { clear: both; margin-top: 50px; }
 
 .copyright { font-size: 13px; padding: 20px; text-align: right; }
@@ -164,9 +176,9 @@ footer { clear: both; margin-top: 50px; }
 /** Global UI tweaks */
 .filter-help, .page-title { display: none; }
 
-body.page-blog-categories .page-title, body.page-blog-date .page-title { display: block; }
+body.page-blog-categories .page-title, body.page-blog-date .page-title, body.pathone-contact .page-title { display: block; }
 
-body.node-type-article, body.page-comment, body.page-node-3, body.page-blog-categories, body.page-blog-date { background-color: #363636; color: #fff; }
+body.node-type-article, body.page-comment, body.pathone-blog, body.pathone-contact { background-color: #363636; color: #fff; }
 
 .page-comment .comment-preview { width: 70%; margin: 0 auto; background-color: transparent; }
 .page-comment h3 a { font-size: 37px; color: #e47971; text-align: center; font-weight: 400; padding: 80px 0 20px 0; display: block; }

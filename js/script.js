@@ -41,14 +41,6 @@
 
     };
 
-    // Exposing component for initialization
-    // jcsUtils.headerComponent = headerComponent;
-
-    /**
-     * When user clicks on the portfolio menu item, scroll to the portfolio
-     * section of the homepage
-     */
-
     $(document).ready( function() {
         /**
          * Initializing components
@@ -65,29 +57,29 @@
 
         // These control the highlighting of the portfolio menu as the user scrolls on
         // the home page
-        if (jQuery('.portfoliomenu').length) {
+        if ($('.portfoliomenu').length) {
             headerComponent.init(
                     '.visualdesign-menu-item', 
                     'color--orange',
-                    jQuery('.portfeed--visualdesign').offset().top - 200,
-                    jQuery('.portfeed--printdesign').offset().top - 200);
+                    $('.portfeed--visualdesign').offset().top - 200,
+                    $('.portfeed--printdesign').offset().top - 200);
 
             headerComponent.init(
                     '.printdesign-menu-item', 
                     'color--reddish', 
-                    jQuery('.portfeed--printdesign').offset().top - 200,
-                    jQuery('.portfeed--webdevelopment').offset().top - 200);
+                    $('.portfeed--printdesign').offset().top - 200,
+                    $('.portfeed--webdevelopment').offset().top - 200);
 
             headerComponent.init(
                     '.webdevelopment-menu-item',
                     'color--lightgreen',
-                    jQuery('.portfeed--webdevelopment').offset().top - 200);
+                    $('.portfeed--webdevelopment').offset().top - 200);
 
             // Apply the active class on the homepage only if we hit the portfolio section
             headerComponent.init(
                     '.portfolio-menu-item',
                     'active',
-                    jQuery('.portfoliomenu').offset().top - 100);
+                    $('.portfoliomenu').offset().top - 100);
         }
 
         /**
@@ -107,7 +99,7 @@
             $('.portfolio-menu-item').addClass('active');
         }
 
-        if ($('body').hasClass('node-type-article')) {
+        if ($('body').hasClass('pathone-blog')) {
             $('.blog-menu-item').addClass('active');
         }
 
@@ -157,6 +149,27 @@
         $('.js-categories').click( function() {
             $('.categorylist').slideToggle('fast');
         });
+
+        $('.portfolio-menu-item').click( function() {
+            event.preventDefault();
+            if (window.location.pathname !== '/') {
+                window.location = '/#portfolio';
+            } else {
+                $('html,body').animate({
+                    scrollTop: ($('.portfoliomenu').offset().top - 48) + 'px'
+                });
+            }
+        });
+
+        /**
+         * When user clicks on the portfolio menu item, scroll to the portfolio
+         * section of the homepage
+         */
+        if (window.location.pathname === '/') {
+            if (window.location.hash === '#portfolio') {
+                $(window).scrollTop($('.portfoliomenu').offset().top - 48);
+            }
+        }
 
     });
 
