@@ -1,7 +1,7 @@
 <?php
 //kpr(get_defined_vars());
 //http://drupalcontrib.org/api/drupal/drupal--modules--node--node.tpl.php
-//node--[CONTENT TYPE].tpl.php
+//node--portfolio_piece.tpl.php
 
 //to remove all markup around a given field call the nomarkup theme function 
 //$content['field_name']['#theme'] = "nomarkup";

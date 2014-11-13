@@ -25,8 +25,7 @@
   <div role="main" id="main-content">
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
-      <!-- Never want to print the default title -->
-      <!-- <h1><?php print $title; ?></h1> -->
+     <h1 class="page-title"><?php print $title; ?></h1>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 

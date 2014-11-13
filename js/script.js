@@ -19,7 +19,8 @@
 
                     // Getting cross-browser compatible value of vertical
                     // position of scrollbar
-                    vertPos = (window.pageYOffset !== undefined) ? window.pageYOffset : document.documentElement.scrollTop;
+                    vertPos = (window.pageYOffset !== undefined) ? 
+                            window.pageYOffset : document.documentElement.scrollTop;
                     
                     if (vertPos > TESTHEIGHT && !($(elClass).hasClass(testClass))) {
                         $(elClass).addClass(testClass);
@@ -41,38 +42,120 @@
     };
 
     // Exposing component for initialization
-    jcsUtils.headerComponent = headerComponent;
+    // jcsUtils.headerComponent = headerComponent;
 
     /**
-     * Applying the "active" class in menu items for certain node types
+     * When user clicks on the portfolio menu item, scroll to the portfolio
+     * section of the homepage
      */
-    
-    if ($('body').hasClass('node-type-portfolio-piece')) {
-        $('.portfolio-menu-item').addClass('active');
-    }
 
-    if ($('body').hasClass('node-type-article')) {
-        $('.blog-menu-item').addClass('active');
-    }
+    $(document).ready( function() {
+        /**
+         * Initializing components
+         */
+
+        // Collapsing the main header
+        headerComponent.init('.header', 'header--collapsed', 100);
+
+        // When header collapses, making sure the page adjusts to make up for the jump
+        headerComponent.init('.page', 'extrapadding', 100);
+
+        // When the portfolio menu reaches the top, make it stick
+        headerComponent.init('.portfoliomenu', 'portfoliomenu--stickyheader');
+
+        // These control the highlighting of the portfolio menu as the user scrolls on
+        // the home page
+        if (jQuery('.portfoliomenu').length) {
+            headerComponent.init(
+                    '.visualdesign-menu-item', 
+                    'color--orange',
+                    jQuery('.portfeed--visualdesign').offset().top - 200,
+                    jQuery('.portfeed--printdesign').offset().top - 200);
+
+            headerComponent.init(
+                    '.printdesign-menu-item', 
+                    'color--reddish', 
+                    jQuery('.portfeed--printdesign').offset().top - 200,
+                    jQuery('.portfeed--webdevelopment').offset().top - 200);
+
+            headerComponent.init(
+                    '.webdevelopment-menu-item',
+                    'color--lightgreen',
+                    jQuery('.portfeed--webdevelopment').offset().top - 200);
+
+            // Apply the active class on the homepage only if we hit the portfolio section
+            headerComponent.init(
+                    '.portfolio-menu-item',
+                    'active',
+                    jQuery('.portfoliomenu').offset().top - 100);
+        }
+
+        /**
+         * Removing the "active" class from portfolio when we hit the homepage
+         */
+        
+        if ($('.portfolio-menu-item').hasClass('active') &&
+                    $('body').hasClass('is-front')) {
+            $('.portfolio-menu-item').removeClass('active');
+        }
+
+        /**
+         * Applying the "active" class in menu items for certain node types
+         */
+        
+        if ($('body').hasClass('node-type-portfolio-piece')) {
+            $('.portfolio-menu-item').addClass('active');
+        }
+
+        if ($('body').hasClass('node-type-article')) {
+            $('.blog-menu-item').addClass('active');
+        }
+
+        /**
+         * This sucks, but move the page title after the blog header for certain pages
+         */
+        $('.page-blog-categories .page-title, .page-blog-date .page-title').prependTo('.blogindex--wrapper');
+
+        /**
+         * Positioning the datelist and categories list below the menu titles
+         */
+        var doPositioning = function() {
+
+            var elsArray  = [
+                ['.datelist', '.blogheader__filters__dates'],
+                ['.categorylist', '.blogheader__filters__categories']
+            ];
+
+            for (var i = 0; i < elsArray.length; i++) {
+                var datelist = $(elsArray[i][0]);
+                var dateMenuPos = $(elsArray[i][1]).offset();
+
+                datelist.css({
+                    top: dateMenuPos.top + 41 + 'px',
+                    left: dateMenuPos.left + 'px'
+                });
+            }
+
+        };
+
+        doPositioning();
+
+        $(window).resize( function() {
+            doPositioning();
+        });
+
+        /**
+         * Adding click listeners
+         */
+        
+        $('.js-dates').click( function() {
+            $('.datelist').slideToggle('fast');
+        });
+
+        $('.js-categories').click( function() {
+            $('.categorylist').slideToggle('fast');
+        });
+
+    });
 
 })(window.jcsUtils = window.jcsUtils || {}, jQuery);
-
-/**
- * Initializing components
- */
-
-// Collapsing the main header
-jcsUtils.headerComponent.init('.header', 'header--collapsed', 100);
-
-// When header collapses, making sure the page adjusts to make up for the jump
-jcsUtils.headerComponent.init('.page', 'extrapadding', 100);
-
-// When the portfolio menu reaches the top, make it stick
-jcsUtils.headerComponent.init('.portfoliomenu', 'portfoliomenu--stickyheader');
-
-// These control the highlighting of the portfolio menu as the user scrolls on
-// the home page
-jcsUtils.headerComponent.init('.visualdesign-menu-item', 'color--orange', jQuery('.portfeed--visualdesign').offset().top - 200, jQuery('.portfeed--printdesign').offset().top - 200);
-jcsUtils.headerComponent.init('.printdesign-menu-item', 'color--reddish', jQuery('.portfeed--printdesign').offset().top - 200, jQuery('.portfeed--webdevelopment').offset().top - 200);
-jcsUtils.headerComponent.init('.webdevelopment-menu-item', 'color--lightgreen', jQuery('.portfeed--webdevelopment').offset().top - 200);
-
