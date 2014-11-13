@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic);
-html, body { font-family: 'Open Sans', 'Arial', 'sans-serif'; font-size: 16px; font-weight: 300; }
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400italic|Cardo:400,400italic,700);
+html, body { font-family: "Open Sans", "Arial", "sans-serif"; font-size: 16px; font-weight: 300; line-height: 21px; }
 
 .header__region { background-color: #2e2e2e; }
 
@@ -11,11 +11,11 @@ html, body { font-family: 'Open Sans', 'Arial', 'sans-serif'; font-size: 16px; f
 .header nav li a { padding: 0 11px; }
 .header nav li .active { font-weight: 600; background: transparent url("../img/star--small.png") no-repeat top right; }
 
-.header--collapsed { position: fixed; width: 100%; }
+.header--collapsed { position: fixed; z-index: 9999; width: 100%; }
 .header--collapsed .header__region { height: 40px; }
 .header--collapsed .logo { width: 260px; margin: 0; padding: 10px; float: left; }
 .header--collapsed .logo__image { width: 260px; height: auto; }
-.header--collapsed nav ul { float: right; padding-top: 12px; }
+.header--collapsed nav ul { float: right; padding-top: 9px; }
 
 .aboutme { background-color: #c5e3e5; }
 
@@ -28,9 +28,7 @@ html, body { font-family: 'Open Sans', 'Arial', 'sans-serif'; font-size: 16px; f
 .aboutme__description__text { width: 80%; color: #537678; font-size: 24px; line-height: 50px; padding: 70px 0; }
 .aboutme__description__text strong { font-weight: 400; }
 
-.aboutme__description__text--collapsedheader { padding-top: 200px; }
-
-.aboutme__photo--collapsedheader { padding-top: 230px; }
+.extrapadding { padding-top: 135px; }
 
 .blogroll { color: #fff; }
 
@@ -41,27 +39,78 @@ html, body { font-family: 'Open Sans', 'Arial', 'sans-serif'; font-size: 16px; f
 
 .blogroll--roll { background-color: #363636; display: table-cell; vertical-align: top; }
 
-.blogroll__roll__title, .blogroll__posteddate { padding: 20px 0 0 20px; font-family: 'Crimson Text'; font-style: italic; padding: 20px 0 0 20px; color: #bcbcbc; font-size: 19px; }
+.blogroll__roll__title, .blogroll__posteddate { font-family: "Cardo", "Times New Roman", serif; font-style: italic; padding: 20px 0 3px 20px; color: #bcbcbc; font-size: 19px; }
 
 .blogroll__featuredblog__title a { color: #e48a83; padding: 3px 20px 15px 20px; font-size: 30px; font-weight: 400; display: block; }
 
 .blogroll__featuredblog__body { padding: 0 20px 20px 20px; font-size: 14px; line-height: 18px; color: #fff; }
 
-.blogroll__roll__posttitle { padding: 10px 20px 0 20px; font-size: 18px; font-weight: 400; }
+.blogroll__roll__posttitle { padding: 2px 20px 8px 20px; font-size: 18px; font-weight: 400; }
 .blogroll__roll__posttitle a { color: #f4d1b2; }
 
 .portfoliomenu { background-color: #f4f4f4; float: left; width: 100%; }
 
-.portfoliomenu__title { color: #363636; padding: 40px 20px 40px 50px; font-weight: 800; text-transform: uppercase; font-size: 40px; float: left; }
+.portfoliomenu__title { color: #363636; padding: 40px 20px 40px 50px; font-weight: 600; text-transform: uppercase; font-size: 40px; float: left; }
 
-.portfoliomenu__nav { float: right; padding: 47px 50px 0 0; }
-.portfoliomenu__nav li { display: inline; display: inline; font-size: 27px; text-transform: uppercase; font-weight: 800; padding-left: 50px; color: #bcbcbc; }
+.portfoliomenu__nav { float: right; padding: 40px 50px 0 0; color: #bcbcbc; }
+.portfoliomenu__nav li { display: inline; display: inline; font-size: 27px; text-transform: uppercase; font-weight: 600; padding-left: 50px; }
 .portfoliomenu__nav li a { color: #bcbcbc; }
 
-.portfoliomenu--stickyheader { position: fixed; top: 41px; width: 100%; }
+.portfoliomenu--stickyheader { position: fixed; z-index: 9999; top: 39px; width: 100%; }
+
+.portfeed { padding: 50px 0; width: 90%; margin: 0 auto; }
+
+.portfeed__thumb__image { display: block; padding-top: 7px; }
+.portfeed__thumb__image img { width: 99.5%; height: auto; }
+
+.portfeed--item { display: inline-block; width: 30%; min-width: 300px; padding: 1.5%; vertical-align: top; }
+
+.portfeed__title { padding: 20px 0 40px 0; text-align: center; font-size: 23px; line-height: 30px; }
+.portfeed__title a { color: #2e2e2e; }
+
+.portfeed--visualdesign { padding-top: 100px; }
+.portfeed--visualdesign .portfeed__thumb__image { border-top: 8px #f4d1b2 solid; }
+.portfeed--visualdesign .portfeed__thumb__image img { border: 1px #f4d1b2 solid; }
+
+.portfeed--printdesign .portfeed__thumb__image { border-top: 8px #e48a83 solid; }
+.portfeed--printdesign .portfeed__thumb__image img { border: 1px #e48a83 solid; }
+
+.portfeed--webdevelopment .portfeed__thumb__image { border-top: 8px #c5e3e5 solid; }
+.portfeed--webdevelopment .portfeed__thumb__image img { border: 1px #c5e3e5 solid; }
+
+.portdetail { text-align: center; background-color: #363636; }
+
+.portdetail__container { width: 75%; margin: 0 auto; }
+
+.portdetail__title { padding: 50px 0 5px 0; font-size: 42px; line-height: 52px; font-weight: 400; color: #f4d1b2; }
+
+.portdetail__tags { font-family: "Cardo", "Times New Roman", serif; font-size: 30px; padding: 24px 0 50px 0; font-style: italic; color: #f4d1b2; }
+
+.portdetail__body { padding-bottom: 50px; }
+
+.portdetail__livelink { font-family: "Cardo", "Times New Roman", serif; padding-bottom: 50px; font-size: 22px; font-style: italic; color: #f4d1b2; }
+.portdetail__livelink a { color: #fff; text-decoration: underline; }
+
+.portimages { background-color: #fefefe; }
+.portimages .field-item { display: inline-block; min-width: 500px; width: 40%; padding: 10px; }
+.portimages img { width: 100%; height: auto; border: 2px solid #f4d1b2; }
+
+.portimages__container { padding: 50px 0; width: 90%; margin: 0 auto; text-align: center; }
+
+footer { clear: both; }
+
+.copyright { font-size: 13px; padding: 20px; text-align: right; }
+
+/** Utility classes */
+.color--orange { color: #f4d1b2; }
+
+.color--lightgreen { color: #c5e3e5; }
+
+.color--reddish { color: #e48a83; }
 
 a { text-decoration: none; }
 
+.darkbg { color: #fff; }
 .darkbg .darkbg__whitelinks a { color: #fff; }
 .darkbg .darkbg__orangelinks a { color: #f4d1b2; }
 
