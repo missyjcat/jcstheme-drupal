@@ -157,7 +157,7 @@
             $('.categorylist').slideToggle('fast');
         });
 
-        $('.portfolio-menu-item').click( function() {
+        $('.portfolio-menu-item').click( function(event) {
             event.preventDefault();
             if (window.location.pathname !== '/') {
                 window.location = '/#portfolio';
