@@ -47,17 +47,20 @@
          */
 
         // Collapsing the main header
-        headerComponent.init('.header', 'header--collapsed', 100);
+        headerComponent.init('.header--collapsed', 'is-shown', 90);
 
         // When header collapses, making sure the page adjusts to make up for the jump
-        headerComponent.init('.page', 'extrapadding', 100);
-
-        // When the portfolio menu reaches the top, make it stick
-        headerComponent.init('.portfoliomenu', 'portfoliomenu--stickyheader');
+        // headerComponent.init('.page', 'extrapadding', 100);
 
         // These control the highlighting of the portfolio menu as the user scrolls on
         // the home page
         if ($('.portfoliomenu').length) {
+
+            headerComponent.init(
+                    '.portfoliomenu--stickyheader',
+                    'is-shown',
+                    $('.portfoliomenu').offset().top - 39);
+
             headerComponent.init(
                     '.visualdesign-menu-item', 
                     'color--orange',
@@ -89,6 +92,10 @@
         if ($('.portfolio-menu-item').hasClass('active') &&
                     $('body').hasClass('is-front')) {
             $('.portfolio-menu-item').removeClass('active');
+        }
+
+        if (window.location.hash === '#portfolio') {
+            $('.portfolio-menu-item').addClass('active');
         }
 
         /**
@@ -156,7 +163,7 @@
                 window.location = '/#portfolio';
             } else {
                 $('html,body').animate({
-                    scrollTop: ($('.portfoliomenu').offset().top - 48) + 'px'
+                    scrollTop: ($('.portfoliomenu').offset().top - 38) + 'px'
                 });
             }
         });
@@ -167,7 +174,7 @@
          */
         if (window.location.pathname === '/') {
             if (window.location.hash === '#portfolio') {
-                $(window).scrollTop($('.portfoliomenu').offset().top - 48);
+                $(window).scrollTop($('.portfoliomenu').offset().top - 38);
             }
         }
 
