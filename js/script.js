@@ -168,6 +168,15 @@
             }
         });
 
+        $('.carrot').click( function() {
+            $('.header--collapsed').addClass('js-mobile');
+            $('.js-mobile ul').slideToggle('fast');
+        });
+
+        $('.js-mobile li').click( function() {
+            $('.js-mobile ul').slideToggle('fast');
+        })
+
         /**
          * When user clicks on the portfolio menu item, scroll to the portfolio
          * section of the homepage
