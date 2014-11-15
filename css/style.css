@@ -62,22 +62,21 @@ h1 { font-size: 2em; line-height: 1.4em; }
 
 .portfoliomenu--stickyheader { position: fixed; z-index: 9999; top: 39px; width: 100%; display: none; }
 
-.portfeed { padding: 50px 0; width: 90%; margin: 0 auto; }
+.portfeed { padding: 100px 0 50px 0; width: 90%; margin: 0 auto; }
 
 .portfeed__thumb__image { display: block; padding-top: 7px; }
 .portfeed__thumb__image img { width: 99.5%; height: auto; }
 
-.portfeed--item { display: inline-block; width: 30%; min-width: 300px; padding: 1.5%; vertical-align: top; }
+.portfeed--item { display: inline-block; width: 30%; min-width: 255px; padding: 1.5%; vertical-align: top; }
 
 .portfeed__title { padding: 20px 0 40px 0; text-align: center; font-size: 23px; line-height: 30px; }
 .portfeed__title a { color: #2e2e2e; }
 
-.portfeed--visualdesign { padding-top: 100px; }
-.portfeed--visualdesign .portfeed__thumb__image { border-top: 8px #f4d1b2 solid; }
-.portfeed--visualdesign .portfeed__thumb__image img { border: 1px #f4d1b2 solid; }
+.portfeed--design .portfeed__thumb__image { border-top: 8px #f4d1b2 solid; }
+.portfeed--design .portfeed__thumb__image img { border: 1px #f4d1b2 solid; }
 
-.portfeed--printdesign .portfeed__thumb__image { border-top: 8px #e47971 solid; }
-.portfeed--printdesign .portfeed__thumb__image img { border: 1px #e47971 solid; }
+.portfeed--otherprojects .portfeed__thumb__image { border-top: 8px #e47971 solid; }
+.portfeed--otherprojects .portfeed__thumb__image img { border: 1px #e47971 solid; }
 
 .portfeed--webdevelopment .portfeed__thumb__image { border-top: 8px #c5e3e5 solid; }
 .portfeed--webdevelopment .portfeed__thumb__image img { border: 1px #c5e3e5 solid; }
@@ -96,7 +95,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .portdetail__livelink a { color: #fff; text-decoration: underline; }
 
 .portimages { background-color: #fefefe; }
-.portimages .field-item { display: inline-block; min-width: 500px; width: 40%; padding: 10px; }
+.portimages .field-item { display: inline-block; min-width: 200px; width: 40%; padding: 10px; }
 .portimages img { width: 100%; height: auto; border: 2px solid #f4d1b2; }
 
 .portimages__container { padding: 50px 0; width: 90%; margin: 0 auto; text-align: center; }
@@ -125,7 +124,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 
 .blog__body { font-size: 19px; line-height: 29px; }
 
-.grippie { display: none; }
+.grippie, .portfolio-descriptor { display: none; }
 
 .comment-wrapper { width: 40%; margin: 0 auto; padding: 90px 0; text-align: center; }
 .comment-wrapper h2 { color: #e47971; font-size: 24px; }
@@ -215,7 +214,11 @@ a { text-decoration: none; }
 
 @media (max-width: 1150px) { .portfoliomenu__nav { padding-top: 42px; }
   .portfoliomenu__nav li { font-size: 21px; padding-left: 30px; } }
-@media (max-width: 945px) { .aboutme__photo { display: block; width: 80%; max-width: 530px; padding: 50px 0 30px 0; margin: 0 auto; text-align: center; }
+@media (max-width: 945px) { .datelist, .categorylist { width: 120px; margin-top: -5px; }
+  .datelist a, .datelist h3 a, .categorylist a, .categorylist h3 a { font-size: 16px; }
+  .datelist { margin-left: -15px; }
+  .portfolio-descriptor { display: inline; }
+  .aboutme__photo { display: block; width: 80%; max-width: 530px; padding: 50px 0 30px 0; margin: 0 auto; text-align: center; }
   .aboutme__photo img { padding: 0; width: 100%; max-width: 300px; }
   .aboutme__description { display: block; }
   .aboutme__description__text { text-align: center; margin: 0 auto; padding: 30px 0 60px 0; }
@@ -230,9 +233,9 @@ a { text-decoration: none; }
   .portfoliomenu__title { float: none; font-size: 28px; padding: 0; }
   .portfoliomenu__title p { float: left; padding: 20px; }
   .header .logo, header nav { display: none; }
-  .header--collapsed .carrot { width: 30px; height: 40px; background: transparent url("../img/triangle-reddish.png") no-repeat; position: fixed; top: 13px; right: 0; cursor: pointer; }
+  .header--collapsed .carrot { width: 40px; height: 40px; background: transparent url("../img/menustar.png") no-repeat; position: fixed; top: 3px; right: 0; cursor: pointer; }
   .header--collapsed, .header--collapsed .logo { display: block; }
-  .header--collapsed li { display: block; padding: 10px 15px; text-transform: uppercase; font-size: 17px; }
+  .header--collapsed li { display: block; padding: 5px 15px; text-transform: uppercase; font-size: 17px; }
   .header--collapsed ul { position: fixed; padding-top: 20px; background-color: #363636; z-index: 99999999; right: 0; top: 40px; display: none; }
   .portfoliomenu--stickyheader { z-index: 1; }
   .comment-wrapper, .blog__container { width: 90%; }

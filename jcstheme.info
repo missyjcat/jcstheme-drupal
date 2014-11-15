@@ -36,6 +36,7 @@ regions[highlighted] = Highlighted
 
 
 ;-------------- C S S -------------
+stylesheets[all][] = css/shadowbox.css
 stylesheets[all][] = css/style.css
 
 ;-------------- CSS FOAD -------------
@@ -43,6 +44,7 @@ stylesheets[all][] = css/style.css
 
 ;-------------- JS -------------
 scripts[] = js/script.js
+scripts[] = js/shadowbox/shadowbox.js
 
 ;-------------- Default Mothership Settings  -------------
 settings[mothership_rebuild_registry] = 0
