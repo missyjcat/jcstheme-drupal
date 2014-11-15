@@ -292,6 +292,24 @@
             }
         });
 
+	$('.webdevelopment-menu-item').click( function() {
+	    $('html,body').animate({
+		scrollTop: ($('.portfeed--webdevelopment').offset().top - 200) + 'px'
+	    });
+	});
+
+	$('.design-menu-item').click( function() {
+	    $('html,body').animate({
+		scrollTop: ($('.portfeed--design').offset().top - 190) + 'px'
+	    });
+	});
+
+	$('.otherprojects-menu-item').click( function() {
+	    $('html,body').animate({
+		scrollTop: ($('.portfeed--otherprojects').offset().top - 190) + 'px'
+	    });
+	});
+
         $('.carrot').click( function() {
             $('.js-mobile ul').slideToggle('fast');
         });
