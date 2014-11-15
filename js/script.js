@@ -294,7 +294,7 @@
 
 	$('.webdevelopment-menu-item').click( function() {
 	    $('html,body').animate({
-		scrollTop: ($('.portfeed--webdevelopment').offset().top - 200) + 'px'
+		scrollTop: ($('.portfeed--webdevelopment').offset().top - 190) + 'px'
 	    });
 	});
 

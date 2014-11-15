@@ -78,8 +78,11 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .portfeed--otherprojects .portfeed__thumb__image { border-top: 8px #e47971 solid; }
 .portfeed--otherprojects .portfeed__thumb__image img { border: 1px #e47971 solid; }
 
+.portfeed--webdevelopment { margin-top: 50px; }
 .portfeed--webdevelopment .portfeed__thumb__image { border-top: 8px #c5e3e5 solid; }
 .portfeed--webdevelopment .portfeed__thumb__image img { border: 1px #c5e3e5 solid; }
+
+.webdevelopment-menu-item, .design-menu-item, .otherprojects-menu-item { cursor: pointer; }
 
 .portdetail { text-align: center; background-color: #363636; }
 
