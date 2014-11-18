@@ -215,6 +215,7 @@ body.node-type-article, body.page-comment, body.pathone-blog, body.pathone-conta
 a { text-decoration: none; }
 
 .darkbg { color: #fff; }
+.darkbg a { color: #bcbcbc; text-decoration: underline; }
 .darkbg .darkbg__whitelinks a { color: #fff; }
 .darkbg .darkbg__orangelinks a { color: #f4d1b2; }
 

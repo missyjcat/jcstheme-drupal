@@ -36,7 +36,7 @@ foreach ($hideFieldsArray as $field) {
 <article <?php print $id_node . $classes .  $attributes; ?> role="article">
   <?php print $mothership_poorthemers_helper; ?>
   <div class="content">
-    <div class="portdetail darkbg">
+    <div class="portdetail darkbg darkbg__orangelinks">
       <div class="portdetail__container">
         <?php print render($title_prefix); ?>
         <h1 class="portdetail__title"><?php print $title ?></h1>
