@@ -91,8 +91,10 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .portdetail__title { padding: 50px 0 5px 0; font-size: 42px; line-height: 52px; font-weight: 400; color: #f4d1b2; }
 
 .portdetail__tags { font-family: "Cardo", "Times New Roman", serif; font-size: 30px; padding: 24px 0 50px 0; font-style: italic; color: #f4d1b2; }
+.portdetail__tags .field-item { display: inline; margin: 7px; line-height: 25px; }
 
 .portdetail__body { padding-bottom: 50px; }
+.portdetail__body p { text-align: left; margin-bottom: 20px; font-size: 22px; line-height: 28px; }
 
 .portdetail__livelink { font-family: "Cardo", "Times New Roman", serif; padding-bottom: 50px; font-size: 22px; font-style: italic; color: #f4d1b2; }
 .portdetail__livelink a { color: #fff; text-decoration: underline; }
@@ -126,6 +128,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .blog__date { font-family: "Cardo", "Times New Roman", serif; color: #e2a8a3; font-style: italic; font-size: 25px; text-align: center; padding: 5px 0 40px 0; }
 
 .blog__body { font-size: 19px; line-height: 29px; }
+.blog__body p { margin-bottom: 20px; }
 
 .grippie, .portfolio-descriptor { display: none; }
 
