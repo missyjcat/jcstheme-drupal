@@ -133,7 +133,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 
 .blog__title { font-size: 37px; line-height: 50px; color: #e47971; text-align: center; font-weight: 400; padding: 80px 0 10px 0; }
 
-.blog__date { font-family: "Cardo", "Times New Roman", serif; color: #e2a8a3; font-style: italic; font-size: 25px; text-align: center; padding: 5px 0 40px 0; }
+.blog__date { font-family: "Cardo", "Times New Roman", serif; color: #e2a8a3; font-style: italic; font-size: 25px; text-align: center; padding: 5px 0 40px 0; line-height: 31px; }
 
 .blog__body { font-size: 19px; line-height: 29px; }
 .blog__body p { margin-bottom: 20px; }
@@ -164,6 +164,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .blogindex .blogindex__title a, .page-blog-categories .blogindex__title a, .page-blog-date .blogindex__title a { font-size: 37px; line-height: 50px; color: #e47971; font-weight: 400; }
 .blogindex .blogindex__date, .page-blog-categories .blogindex__date, .page-blog-date .blogindex__date { font-family: "Cardo", "Times New Roman", serif; color: #e2a8a3; font-style: italic; font-size: 17px; padding-bottom: 10px; }
 .blogindex .blogindex__body, .page-blog-categories .blogindex__body, .page-blog-date .blogindex__body { font-size: 18px; line-height: 26px; padding-bottom: 40px; }
+.blogindex .blogindex__body a, .page-blog-categories .blogindex__body a, .page-blog-date .blogindex__body a { color: #bcbcbc; text-decoration: underline; }
 
 .olderposts { background-color: #4a4a4a; }
 .olderposts h2 { font-family: "Cardo", "Times New Roman", serif; color: #bcbcbc; font-style: italic; font-size: 30px; padding: 20px; }
@@ -241,7 +242,8 @@ a { text-decoration: none; }
   .page { margin-top: 40px; }
   .portfoliomenu__nav, .blogroll--roll, .olderposts { display: none; }
   .one-sidebar #main-content { width: 100%; }
-  .blogheader__title, .blogheader__title a { width: 100%; background-color: #e2a8a3; margin-left: 10px; text-align: left; }
+  .blogheader__title, .blogheader__title a { width: 100%; background-color: #e2a8a3; text-align: left; }
+  .blogheader__title a { padding-left: 20px; }
   .blogheader { overflow: visible; height: auto; }
   .blogheader__filters { text-align: left; float: none; }
   .blogheader__filters__categories, .blogheader__filters__dates { margin: 0 0 0 20px; padding: 0 0 10px 0; background: none; }
