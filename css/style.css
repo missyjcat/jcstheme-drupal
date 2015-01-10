@@ -230,7 +230,7 @@ a { text-decoration: none; }
 
 @media (max-width: 1150px) { .portfoliomenu__nav { padding-top: 42px; }
   .portfoliomenu__nav li { font-size: 21px; padding-left: 30px; } }
-@media (max-width: 945px) { .datelist, .categorylist { width: 120px; margin-top: -5px; }
+@media (max-width: 945px) { .datelist, .categorylist { width: 150px; margin-top: -5px; }
   .datelist a, .datelist h3 a, .categorylist a, .categorylist h3 a { font-size: 16px; }
   .datelist { margin-left: -15px; }
   .portfolio-descriptor { display: inline; }
