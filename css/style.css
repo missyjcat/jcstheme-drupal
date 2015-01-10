@@ -21,7 +21,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .header--collapsed .logo__image { width: 260px; height: auto; }
 .header--collapsed ul { float: right; padding-top: 9px; }
 
-.aboutme { background-color: #c5e3e5; }
+.aboutme { background-color: #a4d9dd; }
 
 .aboutme__photo { display: table-cell; vertical-align: middle; text-align: right; width: 37%; padding: 100px 0; }
 
@@ -52,7 +52,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .blogroll__roll__posttitle { padding: 2px 20px 8px 20px; font-size: 18px; font-weight: 400; }
 .blogroll__roll__posttitle a { color: #f4d1b2; }
 
-.portfoliomenu { background-color: #f4f4f4; float: left; width: 100%; }
+.portfoliomenu { background-color: #f4f4f4; float: left; width: 100%; margin-bottom: 50px; }
 
 .portfoliomenu__title { color: #363636; padding: 40px 20px 40px 50px; font-weight: 600; text-transform: uppercase; font-size: 40px; float: left; }
 
@@ -62,7 +62,15 @@ h1 { font-size: 2em; line-height: 1.4em; }
 
 .portfoliomenu--stickyheader { position: fixed; z-index: 9999; top: 39px; width: 100%; display: none; }
 
-.portfeed { padding: 100px 0 50px 0; width: 90%; margin: 0 auto; }
+.portfeed { padding: 50px 0 50px 0; width: 90%; margin: 0 auto; }
+
+.portfeed__header { text-align: center; text-transform: uppercase; font-weight: 600; font-size: 40px; margin-bottom: 50px; line-height: 55px; }
+
+.portfeed__header--webdev { color: #a4d9dd; }
+
+.portfeed__header--design { color: #f4d1b2; }
+
+.portfeed__header--other { color: #e47971; }
 
 .portfeed__thumb__image { display: block; padding-top: 7px; }
 .portfeed__thumb__image img { width: 99.5%; height: auto; }
@@ -79,8 +87,8 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .portfeed--otherprojects .portfeed__thumb__image img { border: 1px #e47971 solid; }
 
 .portfeed--webdevelopment { margin-top: 4%; }
-.portfeed--webdevelopment .portfeed__thumb__image { border-top: 8px #c5e3e5 solid; }
-.portfeed--webdevelopment .portfeed__thumb__image img { border: 1px #c5e3e5 solid; }
+.portfeed--webdevelopment .portfeed__thumb__image { border-top: 8px #a4d9dd solid; }
+.portfeed--webdevelopment .portfeed__thumb__image img { border: 1px #a4d9dd solid; }
 
 .webdevelopment-menu-item, .design-menu-item, .otherprojects-menu-item { cursor: pointer; }
 
@@ -206,7 +214,7 @@ body.node-type-article, body.page-comment, body.pathone-blog, body.pathone-conta
 /** Utility classes */
 .color--orange { color: #f4d1b2; }
 
-.color--lightgreen { color: #c5e3e5; }
+.color--lightgreen { color: #a4d9dd; }
 
 .color--reddish { color: #e47971; }
 
@@ -215,7 +223,7 @@ body.node-type-article, body.page-comment, body.pathone-blog, body.pathone-conta
 a { text-decoration: none; }
 
 .darkbg { color: #fff; }
-.darkbg a { color: #bcbcbc; text-decoration: underline; }
+.darkbg a { color: #bcbcbc; }
 .darkbg .darkbg__whitelinks a { color: #fff; }
 .darkbg .darkbg__orangelinks a { color: #f4d1b2; }
 
