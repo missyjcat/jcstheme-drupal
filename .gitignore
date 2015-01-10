@@ -2,3 +2,5 @@
 ._*
 scss/
 dbcode/
+.sass-cache*
+*.css.map
