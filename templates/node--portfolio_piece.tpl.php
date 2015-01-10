@@ -53,6 +53,7 @@ foreach ($hideFieldsArray as $field) {
   
     <div class="portimages">
       <div class="portimages__container">
+        <p class="portimages__instructions">Click on an image to view a slideshow.</p>
         <?php print render($content['field_image']); ?>
       </div>
     </div>

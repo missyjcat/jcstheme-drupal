@@ -113,6 +113,8 @@ h1 { font-size: 2em; line-height: 1.4em; }
 
 .portimages__container { padding: 50px 0; width: 90%; margin: 0 auto; text-align: center; }
 
+.portimages__instructions { padding-bottom: 50px; text-transform: uppercase; }
+
 .blog { background-color: #363636; }
 
 .blogheader { background-color: #e2a8a3; height: 41px; overflow: hidden; }
