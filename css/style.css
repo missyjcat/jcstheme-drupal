@@ -262,5 +262,9 @@ a { text-decoration: none; }
   .comment-form .form-textarea-wrapper { width: auto; }
   .form-textarea-wrapper textarea { margin: 0 auto; width: 90%; }
   .pathone-blog img { max-width: 90%; height: auto !important; } }
+/* NAV BAR THEMING */
+body.adminimal-menu { padding-top: 9px !important; }
+
+#navbar-administration { display: none; }
 
 /*# sourceMappingURL=style.css.map */
