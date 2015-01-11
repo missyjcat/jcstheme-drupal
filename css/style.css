@@ -102,7 +102,8 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .portdetail__tags .field-item { display: inline; margin: 7px; line-height: 25px; }
 
 .portdetail__body { padding-bottom: 50px; }
-.portdetail__body p { text-align: left; margin-bottom: 20px; font-size: 22px; line-height: 28px; }
+.portdetail__body p, .portdetail__body ul { text-align: left; margin-bottom: 20px; font-size: 22px; line-height: 28px; }
+.portdetail__body li { list-style-type: disc; margin: 0 0 20px 60px; }
 
 .portdetail__livelink { font-family: "Cardo", "Times New Roman", serif; padding-bottom: 50px; font-size: 22px; font-style: italic; color: #f4d1b2; }
 .portdetail__livelink a { color: #fff; text-decoration: underline; }
