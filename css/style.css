@@ -261,6 +261,6 @@ a { text-decoration: none; }
   .comment-wrapper, .blog__container { width: 90%; }
   .comment-form .form-textarea-wrapper { width: auto; }
   .form-textarea-wrapper textarea { margin: 0 auto; width: 90%; }
-  .pathone-blog img { max-width: 90%; height: auto; } }
+  .pathone-blog img { max-width: 90%; height: auto !important; } }
 
 /*# sourceMappingURL=style.css.map */
