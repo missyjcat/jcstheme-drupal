@@ -265,6 +265,8 @@ a { text-decoration: none; }
 /* NAV BAR THEMING */
 body.adminimal-menu { padding-top: 9px !important; }
 
+body.adminimal-menu .header--collapsed { display: none; }
+
 #navbar-administration { display: none; }
 
 /*# sourceMappingURL=style.css.map */
