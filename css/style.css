@@ -48,6 +48,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .blogroll__featuredblog__title a { color: #e47971; padding: 3px 20px 15px 20px; font-size: 30px; line-height: 38px; font-weight: 400; display: block; }
 
 .blogroll__featuredblog__body { padding: 0 20px 20px 20px; font-size: 14px; line-height: 18px; color: #fff; }
+.blogroll__featuredblog__body a { color: #bcbcbc; text-decoration: underline; }
 
 .blogroll__roll__posttitle { padding: 2px 20px 8px 20px; font-size: 18px; font-weight: 400; }
 .blogroll__roll__posttitle a { color: #f4d1b2; }
