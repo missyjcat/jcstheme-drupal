@@ -15,7 +15,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .header li a { padding: 0 11px; }
 .header li .active { font-weight: 600; background: transparent url("../img/star--small.png") no-repeat top right; }
 
-.header--collapsed { position: fixed; z-index: 9999; width: 100%; top: 0; display: none; }
+.header--collapsed { position: fixed; z-index: 100; width: 100%; top: 0; display: none; }
 .header--collapsed .header__region { height: 40px; }
 .header--collapsed .logo { width: 260px; margin: 0; padding: 10px; float: left; }
 .header--collapsed .logo__image { width: 260px; height: auto; }
@@ -61,7 +61,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .portfoliomenu__nav li { display: inline; display: inline; font-size: 27px; text-transform: uppercase; font-weight: 600; padding-left: 50px; }
 .portfoliomenu__nav li a { color: #bcbcbc; }
 
-.portfoliomenu--stickyheader { position: fixed; z-index: 9999; top: 39px; width: 100%; display: none; }
+.portfoliomenu--stickyheader { position: fixed; z-index: 100; top: 39px; width: 100%; display: none; }
 
 .portfeed { padding: 50px 0 50px 0; width: 90%; margin: 0 auto; }
 
@@ -259,12 +259,12 @@ a { text-decoration: none; }
   .header--collapsed .carrot { width: 40px; height: 40px; background: transparent url("../img/menustar.png") no-repeat; position: fixed; top: 3px; right: 0; cursor: pointer; }
   .header--collapsed, .header--collapsed .logo { display: block; }
   .header--collapsed li { display: block; padding: 5px 15px; text-transform: uppercase; font-size: 17px; }
-  .header--collapsed ul { position: fixed; padding-top: 20px; background-color: #363636; z-index: 99999999; right: 0; top: 40px; display: none; }
+  .header--collapsed ul { position: fixed; padding-top: 20px; background-color: #363636; z-index: 1000; right: 0; top: 40px; display: none; }
   .portfoliomenu--stickyheader { z-index: 1; }
   .comment-wrapper, .blog__container { width: 90%; }
   .comment-form .form-textarea-wrapper { width: auto; }
   .form-textarea-wrapper textarea { margin: 0 auto; width: 90%; } }
 /* NAV BAR THEMING */
-#navbar-administration { z-index: 1000000; }
+#navbar-administration { z-index: 10000; }
 
 /*# sourceMappingURL=style.css.map */
