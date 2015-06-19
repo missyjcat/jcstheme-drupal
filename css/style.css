@@ -265,10 +265,6 @@ a { text-decoration: none; }
   .comment-form .form-textarea-wrapper { width: auto; }
   .form-textarea-wrapper textarea { margin: 0 auto; width: 90%; } }
 /* NAV BAR THEMING */
-body.adminimal-menu { padding-top: 9px !important; }
-
-body.adminimal-menu .header--collapsed { display: none; }
-
-#navbar-administration { display: none; }
+#navbar-administration { z-index: 1000000; }
 
 /*# sourceMappingURL=style.css.map */
