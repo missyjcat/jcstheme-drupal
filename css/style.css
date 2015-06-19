@@ -169,6 +169,7 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .blogindex .blogindex__date, .page-blog-categories .blogindex__date, .page-blog-date .blogindex__date { font-family: "Cardo", "Times New Roman", serif; color: #e2a8a3; font-style: italic; font-size: 23px; padding: 20px 0; line-height: 31px; }
 .blogindex .blogindex__body, .page-blog-categories .blogindex__body, .page-blog-date .blogindex__body { font-size: 18px; line-height: 26px; padding-bottom: 40px; }
 .blogindex .blogindex__body a, .page-blog-categories .blogindex__body a, .page-blog-date .blogindex__body a { color: #bcbcbc; text-decoration: underline; }
+.blogindex .pathone-blog img, .page-blog-categories .pathone-blog img, .page-blog-date .pathone-blog img { max-width: 90%; height: auto !important; }
 
 .olderposts { background-color: #4a4a4a; }
 .olderposts h2 { font-family: "Cardo", "Times New Roman", serif; color: #bcbcbc; font-style: italic; font-size: 30px; padding: 20px; }
@@ -261,8 +262,7 @@ a { text-decoration: none; }
   .portfoliomenu--stickyheader { z-index: 1; }
   .comment-wrapper, .blog__container { width: 90%; }
   .comment-form .form-textarea-wrapper { width: auto; }
-  .form-textarea-wrapper textarea { margin: 0 auto; width: 90%; }
-  .pathone-blog img { max-width: 90%; height: auto !important; } }
+  .form-textarea-wrapper textarea { margin: 0 auto; width: 90%; } }
 /* NAV BAR THEMING */
 body.adminimal-menu { padding-top: 9px !important; }
 
