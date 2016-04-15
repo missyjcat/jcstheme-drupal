@@ -221,8 +221,6 @@
 
         };
 
-        doPositioning();
-
 
         $(window).resize( function() {
             
@@ -351,6 +349,9 @@
 
         // Initiate shadowbox plugin
         Shadowbox.init();
+
+        // Position category and date divs
+        doPositioning();
 
     });
 
