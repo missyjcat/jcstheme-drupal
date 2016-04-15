@@ -5,7 +5,7 @@ body.admin-menu::before { top: 30px !important; }
 
 html, body { font-family: "Open Sans", "Arial", "sans-serif"; font-size: 16px; font-weight: 300; line-height: 21px; }
 
-code { font-family: 'Ubuntu Mono', monospace, serif; }
+code, kbd, pre, samp { font-family: 'Ubuntu Mono', monospace, serif; }
 
 h1 { font-size: 2em; line-height: 1.4em; }
 
