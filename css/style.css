@@ -1,8 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400italic|Cardo:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
 body.admin-menu::before { top: 30px !important; }
 
 html, body { font-family: "Open Sans", "Arial", "sans-serif"; font-size: 16px; font-weight: 300; line-height: 21px; }
+
+code { font-family: 'Ubuntu Mono', monospace, serif; }
 
 h1 { font-size: 2em; line-height: 1.4em; }
 
