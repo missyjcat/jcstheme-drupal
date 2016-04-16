@@ -157,8 +157,8 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .comment-wrapper h3, .comment-wrapper label[for="edit-homepage"], .comment-wrapper #edit-homepage, .comment-wrapper .comment-reply, .comment-wrapper .changed { display: none; }
 .comment-wrapper .permalink { display: none; }
 .comment-wrapper article.comment .username { color: #e2a8a3; font-weight: 400; padding: 40px 0 10px 0; font-size: 18px; }
-.comment-wrapper article.comment .date { font-family: "Cardo", "Times New Roman", serif; font-style: italic; }
-.comment-wrapper article.comment .content { padding: 20px 0 40px 0; border-bottom: 1px #bcbcbc solid; }
+.comment-wrapper article.comment .date { font-family: "Cardo", "Times New Roman", serif; font-style: italic; color: #e47971; }
+.comment-wrapper article.comment .content { padding: 20px 0 40px 0; border-bottom: 1px #bcbcbc solid; color: #2e2e2e; }
 
 .comment-form label { padding: 25px 0 5px 0; width: 50%; margin: 0 auto; text-align: center; }
 .comment-form input[type="text"] { width: 50%; margin: 0 auto; text-align: center; }
@@ -214,8 +214,6 @@ footer { clear: both; margin-top: 50px; }
 body.page-blog-categories .page-title, body.page-blog-date .page-title, body.pathone-contact .page-title { display: block; }
 
 body.node-type-article, body.page-comment, body.pathone-blog, body.pathone-contact { background-color: #2e2e2e; color: #fff; }
-
-body.pathone-blog { color: #2e2e2e; }
 
 .pathone-blog .page { background-color: #F4ECEB; }
 
