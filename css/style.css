@@ -215,6 +215,8 @@ body.page-blog-categories .page-title, body.page-blog-date .page-title, body.pat
 
 body.node-type-article, body.page-comment, body.pathone-blog, body.pathone-contact { background-color: #2e2e2e; color: #fff; }
 
+body.pathone-blog { color: #2e2e2e; }
+
 .pathone-blog .page { background-color: #F4ECEB; }
 
 .page-comment .comment-preview { width: 70%; margin: 0 auto; background-color: transparent; padding-top: 20px; }
