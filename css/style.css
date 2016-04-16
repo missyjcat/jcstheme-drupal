@@ -146,6 +146,9 @@ h1 { font-size: 2em; line-height: 1.4em; }
 .blog__body { font-size: 19px; line-height: 29px; color: #2e2e2e; }
 .blog__body p { margin-bottom: 20px; }
 .blog__body a { color: #e47971; font-weight: 700; }
+.blog__body h2, .blog__body h1 { font-family: "Cardo", "Times New Roman", serif; font-style: italic; padding: 15px 0 5px 0; }
+.blog__body h1 { font-size: 1.4em; line-height: 1.4em; }
+.blog__body h2 { font-size: 1.1em; line-height: 1.3em; color: #e47971; }
 
 .grippie, .portfolio-descriptor { display: none; }
 
